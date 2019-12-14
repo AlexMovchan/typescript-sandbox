@@ -1,0 +1,27 @@
+{
+  "parser": "babel-eslint",
+  "extends": [
+    "eslint:recommended",
+    "google",
+    "plugin:react/recommended"
+  ],
+  "rules": {
+    "object-curly-spacing": ["error", "always"],
+    "max-len": ["error", { "code": 120 }]
+    // Additional, per-project rules...
+  },
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true,
+      "modules": true
+    }
+  },
+  "env": {
+    "es2017": true,
+    "amd": true,
+    "node": true,
+    "browser": true
+  }
+}
